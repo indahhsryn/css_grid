@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    display: grid;
+    padding: 100px;
+    height: 500px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr 6fr 4fr;
+    grid-template-areas: "judul nav nav1 nav2"
+                          "title title title sidebar"
+                          "meta conten conten ads"
+                          "meta img img other"
+                          "footer footer footer footer";
+
+}
+
+.title{
+    grid-area: judul;
+    background-color: olive;
+}
+.nav1{
+    grid-area: nav;
+    background-color: pink;
+}
+.nav2{
+    grid-area: nav1;
+    background-color: pink;
+}
+.nav3{
+    grid-area: nav2;
+    background-color: pink;
+}
+.post{
+    grid-area: title;
+    background-color: aqua;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: aquamarine;
+}
+.meta{
+    grid-area: meta;
+    background-color: blueviolet;
+}
+.content{
+    grid-area: conten;
+    background-color: azure;
+}
+.image{
+    grid-area: img;
+    background-color: blue;
+}
+.ads{
+    grid-area: ads;
+    background-color: black;
+}
+.other{
+    grid-area: other;
+    background-color: bisque;
+}
+.footer{
+    grid-area: footer;
+    background-color: brown;
+}
